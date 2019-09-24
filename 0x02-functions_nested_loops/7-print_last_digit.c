@@ -3,21 +3,19 @@
  * print_last_digit - Entry point to receive integers.
  * @n: The integer
  *
- * Description: prints the last digit of a number..
- * Return: 0
+ * Description: Returns the value of the last digit.
+ * Return: 1
  */
 int print_last_digit(int n)
 {
-	int l, c;
+	int l;
 
 	l = n % 10;
 
 	if (l <  0)
 	{
-		l = -l;
-		c = '0' + l;
-		_putchar(c);
+		l = l * (-1);
 	}
-
+	_putchar(l + '0');
 	return (l);
 }
