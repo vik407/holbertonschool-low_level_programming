@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+/**
+ * main - prints Holberton,
+ * followed by a new line.or negative
+ * Return: 0
+ */
+
+int main(0)
+{
+	
+}

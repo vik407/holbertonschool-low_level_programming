@@ -15,7 +15,7 @@ int main(void)
 		k = a % 10;
 
 		putchar(j + '0');
-		putchar(k + '0');
+		putchar(j + '0');
 
 		if (a < 99)
 		{
