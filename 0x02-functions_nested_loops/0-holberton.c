@@ -2,20 +2,20 @@
 /**
  * main - Entry point function
  *
- * Description: followed by a new line.
+ * Description: Prints Holberton using a library followed by a new line.
  * Return: 0
  */
 int main(void)
 {
-	char H[] = "Holberton";
-	int s = sizeof(H);
-	int i = 0;
-
-	while (i < s)
-	{
-		_putchar(H[i]);
-		i++;
-	}
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
 	_putchar('\n');
 	return (0);
 }
