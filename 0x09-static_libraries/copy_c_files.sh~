@@ -1,8 +1,0 @@
-#!/bin/bash
-cat list|cut -d "." -f1|
-    while read CD_KND
-    do
-	Filename=$(find ../ -name "${CD_KND}.c" | head -n1)
-	echo "copy ${CD_KND} file to destination"
-	cat "${Filename}" > "${CD_KND}.c"
-	done
