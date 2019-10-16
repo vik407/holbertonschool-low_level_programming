@@ -17,11 +17,12 @@ char *str_concat(char *s1, char *s2)
 	char *res, *_s1 = s1, *_s2 = s2;
 	unsigned int i = 0, s1_len = 0, s2_len = 0;
 
-	_s1 = (s1 == NULL) ? " " : s1;
-	_s2 = (s2 == NULL) ? " " : s2;
+	_s1 = (s1 == NULL) ? "" : s1;
+	_s2 = (s2 == NULL) ? "" : s2;
 
 	while (_s1[s1_len] != '\0')
 		s1_len++;
+
 	while (_s2[s2_len] != '\0')
 		s2_len++;
 
