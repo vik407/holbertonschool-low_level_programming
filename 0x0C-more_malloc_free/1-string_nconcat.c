@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 
 /**
  * string_nconcat - a function that concatenates two strings.
@@ -15,37 +14,37 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	/* The concatenated response and the indexes */
-	char *res;
-	unsigned int i, j, l_i, l_j;
+	char *res;/* Response */
+	unsigned int lenS1, lenS2, a, b;/* Lengths and indexes */
 
-	s1 = (s1 == NULL) ? "" : s1;/* Validate */
-	s2 = (s2 == NULL) ? "" : s2;/* Validate */
-
-	while (s1[l_i] != '\0')
-		l_i++;
-
-	while (s2[l_j] != '\0')
-		l_j++;
-
-	if (n > l_j)
-		n = l_j;
-
-	res = malloc((l_i + (n + 1)) * sizeof(char));
-
-	if (res == NULL)
-		return (NULL);
-
-	for (i = 0; i < l_i; i++)
-		res[i] = s1[i];
-
-	for (l_j = 0; j < n; j++)
+	lenS1 = 0, lenS2 = 0, a = 0;
+	if (s1)
 	{
-		res[i] = s2[j];
-		i++;
+		while (s1[a++])
+			lenS1++;
 	}
 
-	res[i] = '\0';
+	a = 0;
+	if (s2)
+	{
+		while (s2[a++])
+			lenS2++;
+	}
 
+	if (lenS2 > n)
+		lenS2 = n;
+
+	res = malloc(sizeof(char) * (lenS1 + lenS2 + 1));
+
+	if (!res)
+		return (NULL);
+
+	for (a = 0; a < lenS1; a++)
+		res[a] = s1[a];
+
+	for (b = 0; b < lenS2; b++, a++)
+		res[a] = s2[b];
+
+	res[a] = '\0';
 	return (res);
 }
