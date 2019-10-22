@@ -9,8 +9,8 @@
 int main(void)
 {
 	char *res;
-	res = __FILE__;
 
+	res = __FILE__;
 	printf("%s\n", res);
 	return (0);
 }
