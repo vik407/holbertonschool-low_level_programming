@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "3-calc.h"
+#include "function_pointers.h"
 
 /**
  * get_op_func -  function that searches for an integer.
@@ -21,18 +23,17 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-
 	int i;
 
 	i = 0;
 	while (ops[i].op != NULL)
 	{
-		if (*s == *ops[i].op)
+		if (strcmp(s, ops[i].op) == 0)
 		{
-			return ((ops[i].f));
+			break;
 		}
 		i++;
 	}
 
-	return (NULL);
+	return (ops[i].f);
 }

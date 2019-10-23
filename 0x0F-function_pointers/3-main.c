@@ -21,6 +21,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+	/* Extract the args */
+	int_a = atoi(argv[1]);
+	int_b = atoi(argv[3]);
+
 	/* Detect if the operators are comming in the arguments */
 	p = get_op_func(argv[2]);
 	if (p == NULL)
@@ -29,10 +33,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	/* Do the operations */
-	int_a = atoi(argv[1]);
-	int_b = atoi(argv[3]);
-	result = (*get_op_func(argv[2]))(int_a, int_b);
-
+	result = p(int_a, int_b);
 	printf("%d\n", result);
 
 	return (0);
