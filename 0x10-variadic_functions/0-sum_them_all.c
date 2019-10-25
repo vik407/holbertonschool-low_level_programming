@@ -5,9 +5,9 @@
 
 /**
  * sum_them_all - a function that returns the sum of all its parameters.
- * @n: parameters
+ * @n: parameters, number of parameters
  *
- * Return: sum of arguments, If n == 0, return 0
+ * Return: sum parameters, if num parameters is n == 0, return 0
  */
 
 int sum_them_all(const unsigned int n, ...)
