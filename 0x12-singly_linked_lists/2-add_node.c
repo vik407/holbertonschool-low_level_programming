@@ -22,14 +22,13 @@ list_t *add_node(list_t **head, const char *str)
 		/* if value is NULL return NULL */
 		return (NULL);
 		free(value);
-	} else
-	{
-		/* Add a new node */
-		value->len = lenstr;
-		value->str = strdup(str);
-		value->next = *head;
-		*head = value;
 	}
+
+	/* Add a new node */
+	value->len = lenstr;
+	value->str = strdup(str);
+	value->next = *head;
+	*head = value;
 	/* return pointer */
 	return (value);
 	free(value);
