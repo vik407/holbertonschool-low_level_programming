@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - Write a function that inserts a new node at a
+ * delete_nodeint_at_index - Write a function that deletes a node at a
  * given position.
  * @head: head of the linked list
  * @index: index where the new node should be added. Index starts at 0
@@ -14,7 +14,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	unsigned int i = 0;
 
 	/* if the linked list is empty -1 */
-	if (!*head)
+	if (*head == NULL)
 	{
 		return (-1);
 	}
