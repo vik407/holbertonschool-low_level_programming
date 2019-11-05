@@ -48,3 +48,15 @@ dkms.conf
 # Temporal files
 *.c~
 #*#
+*-main.c
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
