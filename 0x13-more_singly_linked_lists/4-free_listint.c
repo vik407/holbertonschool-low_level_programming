@@ -10,7 +10,7 @@ void free_listint(listint_t *head)
 	listint_t *result;
 
 	/* free nodes while head is not null */
-	while(head != NULL)
+	while (head != NULL)
 	{
 		result = head;
 		/* Move the list */
