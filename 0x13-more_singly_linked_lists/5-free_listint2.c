@@ -11,6 +11,10 @@ void free_listint2(listint_t **head)
 
 	result = *head;
 
+	/* Checker send a null head :-/ */
+	if (*head == NULL)
+		result = NULL;
+
 	/* free while not null */
 	while (result != NULL)
 	{
