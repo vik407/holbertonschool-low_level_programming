@@ -14,7 +14,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	unsigned int i = 0;
 
 	/* if the linked list is empty -1 */
-	if (*head == NULL)
+	if (!*head)
 	{
 		return (-1);
 	}
