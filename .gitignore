@@ -10,3 +10,4 @@
 #Per folder ignores
 /0x18-dynamic_libraries/*.c
 /0x18-dynamic_libraries/*.o
+/0x18-dynamic_libraries/*.c~
