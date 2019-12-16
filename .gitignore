@@ -48,9 +48,11 @@ dkms.conf
 # Temporal files
 *.c~
 #gitignore file
+*
+*main.c
 !*.*
 !*-*
 !*/
-*main*
+!*.*
 *linked_lists*
 .vscode/*

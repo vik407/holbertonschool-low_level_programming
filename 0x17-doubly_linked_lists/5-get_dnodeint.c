@@ -11,7 +11,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	dlistint_t *nth_node = NULL, *_head = head;
 	size_t i = 0, j = 0;
 
-	if (!head || !index || index < 0)
+	if (!head || !index)
 		return (NULL);
 	/* How many? */
 	while (_head)
