@@ -10,14 +10,12 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *nth_node = NULL;
 
-	if (!head || !index)
-		return (NULL);
 	/* Now loop til the index and get the nth node */
 	while (index > 0)
 	{
 		if (!head)
 			return (NULL);
-		
+
 		head = head->next;
 		nth_node = head;
 		index--;
