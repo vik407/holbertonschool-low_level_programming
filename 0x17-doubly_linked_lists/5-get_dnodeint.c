@@ -8,32 +8,19 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	dlistint_t *nth_node = NULL, *_head = head;
-	size_t i = 0, j = 0;
+	dlistint_t *nth_node = NULL;
 
 	if (!head || !index)
 		return (NULL);
-	/* How many? */
-	while (_head)
-	{
-		_head = _head->next;
-		i++;
-	}
-	/* Not found if the i it's less than index */
-	if (i < index)
-		return (NULL);
 	/* Now loop til the index and get the nth node */
-	while (head)
+	while (index > 0)
 	{
-		if (j == index)
-		{
-			nth_node = head;
-			head = NULL;
-		} else
-		{
-			head = head->next;
-			j++;
-		}
+		if (!head)
+			return (NULL);
+		
+		head = head->next;
+		nth_node = head;
+		index--;
 	}
 	return (nth_node);
 }
