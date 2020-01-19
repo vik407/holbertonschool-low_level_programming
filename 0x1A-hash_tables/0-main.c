@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdio.h>
 #include "hash_tables.h"
-
 /**
  * main - check the code for Holberton School students.
  *
