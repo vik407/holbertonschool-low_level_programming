@@ -12,7 +12,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (size)
 	{
 		create = malloc(sizeof(hash_table_t));
-		if(!create)
+		if (!create)
 			return (NULL);
 
 		/*Set the list*/
@@ -29,5 +29,5 @@ hash_table_t *hash_table_create(unsigned long int size)
 			create->array[i] = NULL;
 		}
 	}
-	return create;
+	return (create);
 }
