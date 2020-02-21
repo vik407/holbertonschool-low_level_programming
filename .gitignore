@@ -7,8 +7,9 @@
 !*.*
 *linked_lists*
 .vscode/*
+*.c~
+*.out
+*.*#
 #Per folder ignores
 /0x18-dynamic_libraries/*.c
 /0x18-dynamic_libraries/*.o
-*.c~
-*.out

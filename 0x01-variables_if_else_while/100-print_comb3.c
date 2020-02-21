@@ -11,22 +11,21 @@ int main(void)
 
 	a = 0;
 
-	while (a < 100)
+	while (a <= 100)
 	{
 		j = a % 10;
 		k = a / 10;
 
 		if (k < j)
 		{
-			putchar(j + '0');
 			putchar(k + '0');
+			putchar(j + '0');
 
 			if (a < 89)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-
 		}
 		a++;
 	}
