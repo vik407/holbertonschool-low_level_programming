@@ -13,3 +13,6 @@
 #Per folder ignores
 /0x18-dynamic_libraries/*.c
 /0x18-dynamic_libraries/*.o
+/0x1C-makefiles/main.c
+/0x1C-makefiles/holberton.c
+/0x1C-makefiles/m.h
