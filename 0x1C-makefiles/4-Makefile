@@ -7,7 +7,7 @@ NAME = holberton
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 %.o: %.c
-	$(CC) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 clean:
 	$(RM) -f *~ $(NAME)
 oclean:
